@@ -14,3 +14,16 @@ export class Entity{
         ctx.fillRect(this.x, this.y, this.w, this.h);
     }
 }
+
+export class Player {
+    constructor(x, y, w, h, img, v) {
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h;
+        this.v = v;
+        this.img = new Image();
+        this.path = "./res/img/koralback.png";
+        this.img.src = this.path;
+    }
+}
