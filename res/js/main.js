@@ -1,10 +1,11 @@
 import { Cursor, Background, Score } from "./ui/basic-ui.js";
-import { Entity } from "./logic/entities.js";
+import { Entity, Player } from "./logic/entities.js";
 
 const cursor = new Cursor();
 const background = new Background();
 const score = new Score();
 const firstEntity = new Entity(10, 20, 20, 30,"red", 0 , 0);
+const player = new Player (50, 500, 300, 250, 5);
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
@@ -75,6 +76,7 @@ const renderGame = () => {
 
 const renderEntities = () => {
     firstEntity.draw(ctx);
+    player.draw(ctx);
 };
 
 const calculateFps = () => {
