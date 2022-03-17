@@ -23,7 +23,15 @@ export class Player {
         this.h = h;
         this.v = v;
         this.img = new Image();
-        this.path = "./res/img/koralback.png";
+        this.path = "./res/img/player.png";
         this.img.src = this.path;
-    }
+    
+}
+draw(ctx) {
+    ctx.drawImage(this.img, this.x, this.y, this.w, this.h);
+}
+
+update() {
+
+}
 }
