@@ -5,7 +5,7 @@ const cursor = new Cursor();
 const background = new Background();
 const score = new Score();
 const firstEntity = new Entity(10, 20, 20, 30,"red", 0 , 0);
-const player = new Player (50, 500, 300, 250, 5);
+const player = new Player (50, 450, 300, 250, 5);
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
