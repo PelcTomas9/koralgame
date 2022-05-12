@@ -27,8 +27,8 @@ document.addEventListener("keyup", (e) => {
 
 canvas.addEventListener("mousemove", (e) => {
     const canvasPos = canvas.getBoundingClientRect();
-    mouseX = (canvas.width/100) * ((e.clientX-canvasPos.left) / (window.innerWidth-(canvasPos.left * 2)) / 100);
-    mouseY = (canvas.height/100) * ((e.clientY-canvasPos.top) / (window.innerHeight-(canvasPos.top * 2)) / 100);
+    mouseX = (canvas.width / 100) * ((e.clientX - canvasPos.left) / (window.innerWidth - (canvasPos.left * 2)) / 100) * 10000;
+    mouseY = (canvas.height / 100) * ((e.clientY - canvasPos.top) / (window.innerHeight - (canvasPos.top * 2)) / 100) * 10000;
 });
 
 const resizeCanvas = () => {
